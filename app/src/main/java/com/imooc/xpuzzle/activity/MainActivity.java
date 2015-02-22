@@ -69,7 +69,7 @@ public class MainActivity extends Activity implements OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.xpuzzle_main);
 
-        TEMP_IMAGE_PATH = Environment.getExternalStorageDirectory().getPath() + "/ttt.jpg";
+        TEMP_IMAGE_PATH = Environment.getExternalStorageDirectory().getPath() + "/temp.png";
         picList = new ArrayList<Bitmap>();
         // 初始化Views
         initViews();
