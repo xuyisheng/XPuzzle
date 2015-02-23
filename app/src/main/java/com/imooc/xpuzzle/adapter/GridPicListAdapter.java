@@ -9,6 +9,8 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 
+import com.imooc.xpuzzle.util.ScreenUtil;
+
 import java.util.List;
 
 /**
@@ -45,10 +47,13 @@ public class GridPicListAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup arg2) {
         ImageView iv_pic_item = null;
+        int density = (int) ScreenUtil.getDeviceDensity(context);
         if (convertView == null) {
             iv_pic_item = new ImageView(context);
             // 设置布局 图片
-            iv_pic_item.setLayoutParams(new GridView.LayoutParams(80, 100));
+            iv_pic_item.setLayoutParams(new GridView.LayoutParams(
+                    80 * density,
+                    100 * density));
             // 设置显示比例类型
             iv_pic_item.setScaleType(ImageView.ScaleType.FIT_XY);
         } else {

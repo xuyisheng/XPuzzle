@@ -18,22 +18,22 @@ import java.util.List;
 public class GridItemsAdapter extends BaseAdapter {
 
     // 映射List
-    private List<Bitmap> bitmapItemLists;
-    private Context context;
+    private List<Bitmap> mBitmapItemLists;
+    private Context mContext;
 
-    public GridItemsAdapter(Context context, List<Bitmap> picList) {
-        this.context = context;
-        this.bitmapItemLists = picList;
+    public GridItemsAdapter(Context mContext, List<Bitmap> picList) {
+        this.mContext = mContext;
+        this.mBitmapItemLists = picList;
     }
 
     @Override
     public int getCount() {
-        return bitmapItemLists.size();
+        return mBitmapItemLists.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return bitmapItemLists.get(position);
+        return mBitmapItemLists.get(position);
     }
 
     @Override
@@ -42,19 +42,20 @@ public class GridItemsAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup arg2) {
+    public View getView(int position, View convertView, ViewGroup parent) {
         ImageView iv_pic_item = null;
         if (convertView == null) {
-            iv_pic_item = new ImageView(context);
+            iv_pic_item = new ImageView(mContext);
             // 设置布局 图片
-            iv_pic_item.setLayoutParams(new GridView.LayoutParams(bitmapItemLists.get(position).getWidth(), bitmapItemLists.get(position).getHeight()));
+            iv_pic_item.setLayoutParams(new GridView.LayoutParams(
+                    mBitmapItemLists.get(position).getWidth(),
+                    mBitmapItemLists.get(position).getHeight()));
             // 设置显示比例类型
             iv_pic_item.setScaleType(ImageView.ScaleType.FIT_CENTER);
-
         } else {
             iv_pic_item = (ImageView) convertView;
         }
-        iv_pic_item.setImageBitmap(bitmapItemLists.get(position));
+        iv_pic_item.setImageBitmap(mBitmapItemLists.get(position));
         return iv_pic_item;
     }
 }

@@ -10,43 +10,43 @@ import android.graphics.Bitmap;
 public class ItemBean {
 
     // Item的Id
-    private int itemId;
+    private int mItemId;
     // bitmap的Id
-    private int bitmapId;
-    // bitmap
-    private Bitmap bitmap;
+    private int mBitmapId;
+    // mBitmap
+    private Bitmap mBitmap;
 
     public ItemBean() {
     }
 
-    public ItemBean(int itemId, int bitmapId, Bitmap bitmap) {
-        this.itemId = itemId;
-        this.bitmapId = bitmapId;
-        this.bitmap = bitmap;
+    public ItemBean(int mItemId, int mBitmapId, Bitmap mBitmap) {
+        this.mItemId = mItemId;
+        this.mBitmapId = mBitmapId;
+        this.mBitmap = mBitmap;
     }
 
     public int getItemId() {
-        return itemId;
+        return mItemId;
     }
 
-    public void setItemId(int itemId) {
-        this.itemId = itemId;
+    public void setItemId(int mItemId) {
+        this.mItemId = mItemId;
     }
 
     public int getBitmapId() {
-        return bitmapId;
+        return mBitmapId;
     }
 
-    public void setBitmapId(int bitmapId) {
-        this.bitmapId = bitmapId;
+    public void setBitmapId(int mBitmapId) {
+        this.mBitmapId = mBitmapId;
     }
 
     public Bitmap getBitmap() {
-        return bitmap;
+        return mBitmap;
     }
 
-    public void setBitmap(Bitmap bitmap) {
-        this.bitmap = bitmap;
+    public void setBitmap(Bitmap mBitmap) {
+        this.mBitmap = mBitmap;
     }
 
 }

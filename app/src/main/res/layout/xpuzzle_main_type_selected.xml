@@ -9,7 +9,7 @@
         android:id="@+id/tv_main_type_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
         android:text="2x2"
         android:textColor="@color/main_text"
         android:textSize="@dimen/text_title_sub" />
@@ -18,7 +18,7 @@
         android:id="@+id/tv_main_type_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
         android:text="3x3"
         android:textColor="@color/main_text"
         android:textSize="@dimen/text_title_sub" />

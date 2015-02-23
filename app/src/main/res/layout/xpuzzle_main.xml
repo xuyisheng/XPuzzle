@@ -30,40 +30,10 @@
             android:textSize="@dimen/text_title" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/ll_xpuzzle_main_functions"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/gv_xpuzzle_main_pic_list"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/gv_xpuzzle_main_pic_list"
-        android:layout_margin="@dimen/padding"
-        android:gravity="center">
-
-        <Button
-            android:id="@+id/btn_puzzle_main_record"
-            style="@style/btn_style"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/padding"
-            android:background="@drawable/white_button"
-            android:text="@string/puzzle_main_record" />
-
-        <Button
-            android:id="@+id/btn_puzzle_main_setting"
-            style="@style/btn_style"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/padding"
-            android:background="@drawable/white_button"
-            android:text="@string/puzzle_main_more" />
-    </LinearLayout>
-
     <GridView
         android:id="@+id/gv_xpuzzle_main_pic_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/ll_xpuzzle_main_functions"
         android:layout_below="@id/ll_puzzle_main_spinner"
         android:layout_centerHorizontal="true"
         android:layout_margin="@dimen/padding"
@@ -71,6 +41,6 @@
         android:horizontalSpacing="@dimen/padding"
         android:numColumns="4"
         android:padding="@dimen/padding"
-        android:verticalSpacing="@dimen/padding"></GridView>
+        android:verticalSpacing="@dimen/padding" />
 
 </RelativeLayout>
