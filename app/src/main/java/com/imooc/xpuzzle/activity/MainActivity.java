@@ -174,7 +174,7 @@ public class MainActivity extends Activity implements OnClickListener {
                 Intent intent = new Intent(
                         MainActivity.this,
                         PuzzleMain.class);
-                intent.putExtra("picPath", TEMP_IMAGE_PATH);
+                intent.putExtra("mPicPath", TEMP_IMAGE_PATH);
                 intent.putExtra("mType", mType);
                 startActivity(intent);
             }
